@@ -45,7 +45,7 @@ function generatePassword(){
     }
     // If presses cancel, terminate the function.
     else if (!passwordlength){
-      return placeholder;
+      return "";
     }
     else {
       // Invalid length alert and shifts choice boolean to false.
@@ -65,7 +65,7 @@ function generatePassword(){
       // Confirm on failed character input so that the user has the choice to terminate or try again.
       let exit = confirm("Error, no useable characters selected, do you want to try again?");
       if (!exit) {
-        return placeholder;
+        return "";
       }
     }
     // If any of the four character type booleans are true, set choice to true and break the loop.
